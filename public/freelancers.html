@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пошук працівників — Bounty Hunter</title>
+  
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html" aria-current="page">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container">
+  <h1 class="page-title">Пошук працівників</h1>
+  <form class="toolbar" id="filters" role="search">
+    <div class="field"><label for="f-cat">область знань</label>
+      <select class="select" id="f-cat" data-filter="category"><option value="">Усі</option><option value="frontend">Frontend</option><option value="backend">Backend</option><option value="fullstack">Fullstack</option></select></div>
+    <div class="field"><label for="f-lvl">рівень кваліфікації</label>
+      <select class="select" id="f-lvl" data-filter="level"><option value="">Усі</option><option value="junior">junior</option><option value="middle">middle</option><option value="senior">senior</option></select></div>
+    <div class="field"><label for="f-rate">рейтинг</label>
+      <select class="select" id="f-rate" data-filter="rating"><option value="">Будь-який</option><option value="4">від 4</option><option value="4.5">від 4.5</option><option value="5">5</option></select></div>
+    <div class="field"><label for="f-status">доступність</label>
+      <select class="select" id="f-status" data-filter="status"><option value="">Усі</option><option value="free">Free</option><option value="busy">Busy</option></select></div>
+    <div class="field search"><label class="visually-hidden" for="f-q">Пошук</label><input class="input" id="f-q" type="search" placeholder="пошук працівників" data-search></div>
+  </form>
+  <ul class="results" id="results" style="list-style:none;margin:0;padding:0 0 48px"></ul>
+  <p class="empty" id="empty" hidden>Нікого не знайдено. Змініть фільтри.</p>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

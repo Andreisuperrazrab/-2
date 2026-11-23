@@ -1,0 +1,13 @@
+<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Мій профіль — Bounty Hunter</title><link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"></head><body>
+<header class="site-header"><a class="logo" href="home.html"><img src="assets/logo.svg" alt="Bounty Hunter — головна"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container"><section class="editor-card"><h1>Мій профіль фрилансера</h1><p>Відомості зберігаються у базі даних і відображаються в каталозі.</p><form class="card editor-grid" id="profile-form">
+<div class="field"><label for="pr-name">Ім’я</label><input class="input" id="pr-name" maxlength="80" required></div>
+<div class="field"><label for="pr-category">Спеціалізація</label><select class="select" id="pr-category"><option value="frontend">Frontend</option><option value="backend">Backend</option><option value="fullstack">Fullstack</option></select></div>
+<div class="field"><label for="pr-level">Рівень</label><select class="select" id="pr-level"><option value="junior">Junior</option><option value="middle">Middle</option><option value="senior">Senior</option></select></div>
+<div class="field"><label for="pr-availability">Доступність</label><select class="select" id="pr-availability"><option value="free">Free</option><option value="busy">Busy</option></select></div>
+<div class="field"><label for="pr-rate">Ставка</label><input class="input" id="pr-rate" maxlength="60" required></div>
+<div class="field"><label for="pr-location">Місто</label><input class="input" id="pr-location" maxlength="80" required></div>
+<div class="field editor-span"><label for="pr-bio">Про себе</label><textarea class="textarea" id="pr-bio" minlength="10" maxlength="1500" required></textarea></div>
+<div class="field editor-span"><label for="pr-stack">Технології (через кому, до 12)</label><input class="input" id="pr-stack" placeholder="HTML, CSS, JavaScript"></div>
+<p class="form-error editor-span" id="profile-notice" role="status"></p><button class="btn" type="submit">Зберегти профіль</button>
+</form></section></main><footer class="site-footer"><a href="help.html">Підтримка</a><a href="about.html">Про сайт</a></footer><script src="js/main.js"></script></body></html>

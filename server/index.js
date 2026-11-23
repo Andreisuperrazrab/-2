@@ -1,0 +1,13 @@
+'use strict';
+const path = require('node:path');
+const {openDatabase} = require('./db');
+const {createApp} = require('./app');
+const PORT = Number(process.env.PORT || 3000);
+const HOST = process.env.HOST || '0.0.0.0';
+const DB_PATH = path.resolve(process.env.DB_PATH || path.resolve(__dirname,'../data/bounty-hunter.sqlite'));
+const db=openDatabase(DB_PATH,{seed:process.env.DEMO_SEED==='1'});
+const server=createApp({db,secureCookies:process.env.COOKIE_SECURE==='1'||process.env.NODE_ENV==='production'});
+server.listen(PORT,HOST,()=>console.log(`Bounty Hunter: http://${HOST}:${PORT} (DB: ${DB_PATH})`));
+const shutdown=()=>server.close(()=>{db.close();process.exit(0)});
+process.on('SIGINT',shutdown);
+process.on('SIGTERM',shutdown);

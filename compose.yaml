@@ -1,0 +1,15 @@
+services:
+  bounty-hunter:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      DB_PATH: /data/bounty-hunter.sqlite
+      NODE_ENV: development # локальний HTTP; для публічного HTTPS встановіть production
+      DEMO_SEED: '1'      # ЛИШЕ навчальна демонстрація
+    volumes:
+      - bounty_data:/data
+volumes:
+  bounty_data:

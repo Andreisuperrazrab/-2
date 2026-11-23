@@ -1,0 +1,12 @@
+{
+  "endpoint": "/api/jobs",
+  "requests": 200,
+  "concurrency": 10,
+  "errors": 0,
+  "p50_ms": 8.39,
+  "p95_ms": 20.42,
+  "p99_ms": 39.21,
+  "total_ms": 241.97,
+  "throughput_rps": 826.5,
+  "kind": "Local test; not production performance or an external Lighthouse audit"
+}

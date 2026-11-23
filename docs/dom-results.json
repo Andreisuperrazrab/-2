@@ -1,0 +1,17 @@
+{
+  "screenshots": [
+    "01_jobs_desktop.png",
+    "02_freelancers_filter.png",
+    "03_client_crud.png",
+    "04_job_detail.png",
+    "05_application_waiting.png",
+    "06_profile_editor.png",
+    "07_persistent_chat.png",
+    "08_client_applications.png",
+    "09_jobs_mobile.png"
+  ],
+  "dom_page_errors": [],
+  "mobile_horizontal_overflow": false,
+  "request_count": 35,
+  "network_mode": "HTML/CSS and app JS rendered in Chromium; requests bridged to local server due to browser network policy; real HTTP browser navigation NOT verified"
+}
